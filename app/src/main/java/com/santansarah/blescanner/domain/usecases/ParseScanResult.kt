@@ -40,7 +40,7 @@ class ParseScanResult
             services = bleRepository.getServices(it)
         }
 
-        var device = ScannedDevice(
+        val device = ScannedDevice(
             deviceId = 0,
             deviceName = result.device.name,
             address = result.device.address,

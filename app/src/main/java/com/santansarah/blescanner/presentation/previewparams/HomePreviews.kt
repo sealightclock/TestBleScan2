@@ -18,7 +18,7 @@ fun HomeLayoutPreview(
     @PreviewParameter(PortraitLayoutParams::class) featureParams: FeatureParams
 ) {
 
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             HomeLayout(
                 appLayoutInfo = featureParams.appLayoutInfo,
@@ -57,7 +57,7 @@ fun HomeLayoutNarrowPreview(
     @PreviewParameter(PortraitNarrowLayoutParams::class) featureParams: FeatureParams
 ) {
 
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             HomeLayout(
                 appLayoutInfo = featureParams.appLayoutInfo,
@@ -96,7 +96,7 @@ fun HomeLandscapeLayoutPreview(
     @PreviewParameter(LandscapeLayoutParams::class) featureParams: FeatureParams
 ) {
 
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             HomeLayout(
                 appLayoutInfo = featureParams.appLayoutInfo,
@@ -135,7 +135,7 @@ fun HomeLayoutBigPreview(
     @PreviewParameter(LandscapeBigLayoutParams::class) featureParams: FeatureParams
 ) {
 
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             HomeLayout(
                 appLayoutInfo = featureParams.appLayoutInfo,

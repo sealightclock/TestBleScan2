@@ -67,8 +67,8 @@ class BleRepository(
         val devices = dao.getScannedDevices()
         Timber.d("got devices..")
 
-        return scanFilter?.let { scanFilter ->
-            when (scanFilter) {
+        return scanFilter?.let { scanFilter2 ->
+            when (scanFilter2) {
                 ScanFilterOption.RSSI -> devices.map { deviceList ->
                     deviceList.filter { !it.forget }.sortedByDescending { it.baseRssi }
                 }

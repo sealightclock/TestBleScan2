@@ -43,7 +43,7 @@ fun DeviceListScreen(
     ) {
 
         if (appLayoutInfo.appLayoutMode.isLandscape()) {
-            Row() {
+            Row {
                     ScanFilters(
                         onFilter = onFilter,
                         scanFilterOption = scanFilterOption,
@@ -99,7 +99,7 @@ fun ScannedDeviceList(
 fun PreviewDeviceListScreen(
     @PreviewParameter(PortraitListParams::class) featureParams: FeatureParams
 ) {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             DeviceListScreen(
                 paddingValues = PaddingValues(),
@@ -120,7 +120,7 @@ fun PreviewDeviceListScreen(
 fun PreviewLandscapeDeviceListScreen(
     @PreviewParameter(LandscapeListParams::class) featureParams: FeatureParams
 ) {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             DeviceListScreen(
                 paddingValues = PaddingValues(),
@@ -141,7 +141,7 @@ fun PreviewLandscapeDeviceListScreen(
 fun PreviewLandscapeBigListScreen(
     @PreviewParameter(LandscapeBigListParams::class) featureParams: FeatureParams
 ) {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             DeviceListScreen(
                 paddingValues = PaddingValues(),

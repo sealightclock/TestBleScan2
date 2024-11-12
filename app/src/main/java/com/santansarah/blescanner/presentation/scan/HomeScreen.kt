@@ -93,7 +93,7 @@ fun HomeScreen(
 fun PreviewHomeScreen(
     @PreviewParameter(DevicePortraitParams::class) featureParams: FeatureParams
 ) {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             HomeScreen(
                 appLayoutInfo = featureParams.appLayoutInfo,
@@ -116,7 +116,7 @@ fun PreviewHomeScreen(
 fun PreviewLandscapeDeviceDetailScreen(
     @PreviewParameter(DeviceLandscapeParams::class) featureParams: FeatureParams
 ) {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             HomeScreen(
                 appLayoutInfo = featureParams.appLayoutInfo,
@@ -137,7 +137,7 @@ fun PreviewLandscapeDeviceDetailScreen(
 fun PreviewLandscapeBigDeviceDetailScreen(
     @PreviewParameter(DeviceBigParams::class) featureParams: FeatureParams
 ) {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             HomeScreen(
                 appLayoutInfo = featureParams.appLayoutInfo,

@@ -44,7 +44,7 @@ fun ShowDeviceDetail(
 
     val scanUi = scanState.scanUI
     val scannedDevice = scanUi.selectedDevice!!.scannedDevice
-    val services = scanUi.selectedDevice!!.services
+    val services = scanUi.selectedDevice.services
 
     val connectEnabled = !scanUi.bleMessage.isActive()
     val disconnectEnabled = scanUi.bleMessage.isActive()
@@ -169,7 +169,7 @@ fun DeviceDetails(device: ScannedDevice) {
 fun PreviewDeviceDetailScreen(
     @PreviewParameter(DevicePortraitParams::class) featureParams: FeatureParams
 ) {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             ShowDeviceDetail(
                 scanState = featureParams.scanState,
@@ -186,7 +186,7 @@ fun PreviewDeviceDetailScreen(
 fun PreviewLandscapeDeviceDetailScreen(
     @PreviewParameter(DeviceLandscapeParams::class) featureParams: FeatureParams
 ) {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Column {
             ShowDeviceDetail(
                 scanState = featureParams.scanState,

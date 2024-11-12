@@ -128,7 +128,7 @@ private fun ScanFilterButtons(
 @Preview
 @Composable
 fun PreviewScanFilters() {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Surface {
             ScanFilters({}, ScanFilterOption.FAVORITES, portrait)
         }
@@ -138,7 +138,7 @@ fun PreviewScanFilters() {
 @Preview
 @Composable
 fun PreviewScanFiltersLandscape() {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         Surface {
             ScanFilters({}, ScanFilterOption.FAVORITES, landscapeNormal)
         }

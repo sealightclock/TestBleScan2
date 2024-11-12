@@ -19,14 +19,14 @@ object ELKBLEDOM : ParsableUuid("0000FFF3$UUID_DEFAULT".lowercase()) {
     0x7E 07 05 03 00FF00 10EF
 */
 
-    val white = "FFFFFF"
-    val yellow = "FFFF00"
-    val cyan = "00FFFF"
-    val green = "00FF00"
-    val magenta = "FF00FF"
-    val blue = "0000FF"
-    val orange = "FFA500"
-    val red = "FF0000"
+    private const val white = "FFFFFF"
+    private const val yellow = "FFFF00"
+    private const val cyan = "00FFFF"
+    private const val green = "00FF00"
+    private const val magenta = "FF00FF"
+    private const val blue = "0000FF"
+    private const val orange = "FFA500"
+    private const val red = "FF0000"
 
     val colorsHex = arrayOf(white, yellow, cyan, green, magenta, blue, orange, red)
 
@@ -42,7 +42,7 @@ object ELKBLEDOM : ParsableUuid("0000FFF3$UUID_DEFAULT".lowercase()) {
     fun getLedStatus(bytes: ByteArray): String {
         val firstBytes = bytes.copyOfRange(0, 8)
         val nextBytes = bytes.copyOfRange(9, 14)
-        val finalByes = bytes.copyOfRange(15, 24)
+        val finalBytes = bytes.copyOfRange(15, 24)
 
         return firstBytes.toHex()
 

@@ -96,7 +96,7 @@ fun ControlScreen(
                                 appLayoutInfo = appLayoutInfo,
                                 onBackClicked = onBackClicked,
                                 actionButtons = {
-                                    Row() {
+                                    Row {
                                         ConnectButtons(
                                             connectEnabled, vm::onConnect,
                                             controlState.device, disconnectEnabled, vm::onDisconnect
@@ -141,7 +141,7 @@ fun ControlScreen(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
 
-                        Row() {
+                        Row {
                             ConnectButtons(
                                 connectEnabled, vm::onConnect,
                                 controlState.device, disconnectEnabled, vm::onDisconnect

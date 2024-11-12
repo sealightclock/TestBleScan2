@@ -130,7 +130,7 @@ fun EditDevice(
 )
 @Composable
 fun PreviewEditDevice() {
-BLEScannerTheme() {
+BLEScannerTheme {
 
     Box(
         modifier = Modifier

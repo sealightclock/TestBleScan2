@@ -18,7 +18,7 @@ enum class BlePermissions(val value: Int) {
     companion object {
 
         fun getAllPermissions(bleValue: Int): List<BlePermissions> {
-            var propertyList = mutableListOf<BlePermissions>()
+            val propertyList = mutableListOf<BlePermissions>()
 
             values().forEach {
                 if (bleValue and it.value > 0)
@@ -38,7 +38,7 @@ enum class BleWriteTypes(val value: Int) {
     companion object {
 
         fun getAllTypes(bleValue: Int): List<BleWriteTypes> {
-            var propertyList = mutableListOf<BleWriteTypes>()
+            val propertyList = mutableListOf<BleWriteTypes>()
 
             values().forEach {
                 if (bleValue and it.value > 0)
@@ -63,7 +63,7 @@ enum class BleProperties(val value: Int) {
     companion object {
 
         fun getAllProperties(bleValue: Int): List<BleProperties> {
-            var propertyList = mutableListOf<BleProperties>()
+            val propertyList = mutableListOf<BleProperties>()
 
             values().forEach {
                 if (bleValue and it.value > 0)

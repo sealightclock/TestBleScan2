@@ -4,7 +4,6 @@ import com.santansarah.blescanner.domain.models.UUID_DEFAULT
 import com.santansarah.blescanner.utils.bits
 import com.santansarah.blescanner.utils.bitsToHex
 import com.santansarah.blescanner.utils.toHex
-import timber.log.Timber
 
 object Appearance : ParsableUuid("00002A01$UUID_DEFAULT".lowercase()) {
 

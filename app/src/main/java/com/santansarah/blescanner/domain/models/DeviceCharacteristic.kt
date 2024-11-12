@@ -4,8 +4,6 @@ package com.santansarah.blescanner.domain.models
 import com.santansarah.blescanner.domain.bleparsables.Appearance
 import com.santansarah.blescanner.domain.bleparsables.ELKBLEDOM
 import com.santansarah.blescanner.domain.bleparsables.PreferredConnectionParams
-import com.santansarah.blescanner.utils.bits
-import com.santansarah.blescanner.utils.bitsToHex
 import com.santansarah.blescanner.utils.decodeSkipUnreadable
 import com.santansarah.blescanner.utils.print
 import com.santansarah.blescanner.utils.toBinaryString

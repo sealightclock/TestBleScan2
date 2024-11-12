@@ -82,7 +82,7 @@ fun ShowPermissions(
 @Composable
 fun PermissionsPreview() {
     BLEScannerTheme(dynamicColor = false) {
-        Surface() {
+        Surface {
             ShowPermissions(
                 multiplePermissionsState = object : MultiplePermissionsState {
                     override val allPermissionsGranted: Boolean

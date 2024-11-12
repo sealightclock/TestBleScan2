@@ -165,7 +165,7 @@ fun ScannedDevice(
 fun ScannedDevicePreview() {
     val device = devices[0]
     BLEScannerTheme {
-        Surface() {
+        Surface {
             Box(
                 modifier = Modifier
                     .fillMaxSize()

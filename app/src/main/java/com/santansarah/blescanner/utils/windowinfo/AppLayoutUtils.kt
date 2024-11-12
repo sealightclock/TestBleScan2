@@ -25,8 +25,8 @@ fun getWindowLayoutType(
 
 ): AppLayoutInfo = with(windowInfo) {
     Timber.tag("debug")
-        .d("windowWH: " + windowWidth + ";" + windowHeight + ", " + size.width + ";" + size.height)
-    Timber.tag("debug").d("screenInfo: " + windowInfo.rotation + ";" + foldableInfo?.bounds)
+        .d("%s%s", "windowWH: " + windowWidth + ";" + windowHeight + ", " + size.width + ";", size.height)
+    Timber.tag("debug").d("%s%s", "screenInfo: " + windowInfo.rotation + ";", foldableInfo?.bounds)
 
     // First, I check to see if it's a foldable, with dual screen (isSeparating).
     if ((foldableInfo != null) && foldableInfo.showSeparateScreens) {

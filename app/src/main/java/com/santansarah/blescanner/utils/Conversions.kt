@@ -55,11 +55,11 @@ fun ByteArray.toBinaryString(): String {
 }
 
 private fun toBinary(num: Int, length: Int): String {
-    var num = num
+    var num2 = num
     val sb = StringBuilder()
     for (i in 0 until length) {
-        sb.append(if (num and 1 == 1) '1' else '0')
-        num = num shr 1
+        sb.append(if (num2 and 1 == 1) '1' else '0')
+        num2 = num2 shr 1
     }
     return sb.reverse().toString()
 }

@@ -208,7 +208,7 @@ fun PreviewAppBar(
         customName = null,
         baseRssi = 0,favorite = false, forget = false
     )
-    BLEScannerTheme() {
+    BLEScannerTheme {
         AppBarWithBackButton(
             appLayoutInfo = featureParams.appLayoutInfo,
             onBackClicked = { /*TODO*/ },
@@ -233,7 +233,7 @@ fun PreviewLandscapeAppBar(
         customName = null,
         baseRssi = 0,favorite = false, forget = false
     )
-    BLEScannerTheme() {
+    BLEScannerTheme {
         AppBarWithBackButton(
             appLayoutInfo = featureParams.appLayoutInfo,
             onBackClicked = { /*TODO*/ },
@@ -249,7 +249,7 @@ fun PreviewLandscapeAppBar(
 @Preview
 @Composable
 fun PreviewHomeBar() {
-    BLEScannerTheme() {
+    BLEScannerTheme {
         HomeAppBar(scanning = true, {}, {})
     }
 }
