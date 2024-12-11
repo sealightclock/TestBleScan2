@@ -1,5 +1,29 @@
 # Kotlin, Jetpack Compose, MVVM Clean, BLE Scanner with Room, Koin, and JUnit 5
 
+Baseline technologies:
+- Kotlin
+- Jetpack Compose
+- build.gradle
+
+Other technologies:
+- MVVM Clean:
+  Presentation:
+      View: collectAsState()
+      ViewModel: StateFlow<>
+  Domain:
+      UseCase
+      Dependency Injection (Koin)
+  Data:
+      Repository
+      Room DB
+- Unit testing:
+    JUnit5
+    Room DB
+
+Feature:
+- BLE API
+- Runtime permissions
+
 Scan your BLE devices with my new Jetpack Compose app. BLE scans include:
 
 * The device name, if known
